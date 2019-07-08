@@ -9,7 +9,7 @@
 //   console.log(modules)
 
 var request = new XMLHttpRequest();
-var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+var requestURL = 'https://github.com/katehrybkova/CItiesFilter/blob/master/src/analytics/fixtures/cities.json';
 
 request.open('GET', requestURL);
 request.onreadystatechange = function(e) {
@@ -28,3 +28,5 @@ request.onload = function() {
   var file = request.response;
   console.log(file)
 }
+
+
