@@ -1,0 +1,27 @@
+[
+  {
+    "year": 1991,
+    "population": 9789654,
+    "cost-of-living": 440.90
+  },
+  {
+    "year": 2001,
+    "population": 12097345,
+    "cost-of-living": 670.80
+  },
+  {
+    "year": 2011,
+    "population": 14657111,
+    "cost-of-living": 1200.40
+  },
+  {
+    "year": 2016,
+    "population": 15029231,
+    "cost-of-living": 1500.60
+  },
+  {
+    "year": 2021,
+    "population": 15578225,
+    "cost-of-living": 1760.40
+  }
+]

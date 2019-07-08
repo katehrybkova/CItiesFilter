@@ -1,0 +1,142 @@
+[
+  {
+    "city": "London",
+    "data_file": "london.json"
+  },
+  {
+    "city": "Istanbul",
+    "data_file": "istanbul.json"
+  },
+  {
+    "city": "Moscow",
+    "data_file": "moscow.json"
+  },
+  {
+    "city": "Saint-Petersburg",
+    "data_file": "saint-petersburg.json"
+  },
+  {
+    "city": "Berlin",
+    "data_file": "berlin.json"
+  },
+  {
+    "city": "Madrid",
+    "data_file": "madrid.json"
+  },
+  {
+    "city": "Kyiv",
+    "data_file": "kyiv.json"
+  },
+  {
+    "city": "Rome",
+    "data_file": "rome.json"
+  },
+  {
+    "city": "Paris",
+    "data_file": "paris.json"
+  },
+  {
+    "city": "Bucharest",
+    "data_file": "bucharest.json"
+  },
+  {
+    "city": "Minsk",
+    "data_file": "minsk.json"
+  },
+  {
+    "city": "Hamburg",
+    "data_file": "hamburg.json"
+  },
+  {
+    "city": "Vienna",
+    "data_file": "vienna.json"
+  },
+  {
+    "city": "Budapest",
+    "data_file": "budapest.json"
+  },
+  {
+    "city": "Warsaw",
+    "data_file": "warsaw.json"
+  },
+  {
+    "city": "Barcelona",
+    "data_file": "barcelona.json"
+  },
+  {
+    "city": "Kharkiv",
+    "data_file": "kharkiv.json"
+  },
+  {
+    "city": "Munich",
+    "data_file": "munich.json"
+  },
+  {
+    "city": "Milan",
+    "data_file": "milan.json"
+  },
+  {
+    "city": "Prague",
+    "data_file": "prague.json"
+  },
+  {
+    "city": "Nizhny-Novgorod",
+    "data_file": "nizhny-novgorod.json"
+  },
+  {
+    "city": "Kazan",
+    "data_file": "kazan.json"
+  },
+  {
+    "city": "Sofia",
+    "data_file": "sofia.json"
+  },
+  {
+    "city": "Birmingham",
+    "data_file": "birmingham.json"
+  },
+  {
+    "city": "Brussels",
+    "data_file": "brussels.json"
+  },
+  {
+    "city": "Samara",
+    "data_file": "samara.json"
+  },
+  {
+    "city": "Belgrade",
+    "data_file": "belgrade.json"
+  },
+  {
+    "city": "Ufa",
+    "data_file": "ufa.json"
+  },
+  {
+    "city": "Rostov-on-Don",
+    "data_file": "rostov-on-don.json"
+  },
+  {
+    "city": "Cologne",
+    "data_file": "cologne.json"
+  },
+  {
+    "city": "Voronezh",
+    "data_file": "voronezh.json"
+  },
+  {
+    "city": "Perm",
+    "data_file": "perm.json"
+  },
+  {
+    "city": "Volgograd",
+    "data_file": "volgograd.json"
+  },
+  {
+    "city": "Odessa",
+    "data_file": "odessa.json"
+  },
+  {
+    "city": "Krasnodar",
+    "data_file": "krasnodar.json"
+  }
+]

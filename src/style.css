@@ -1,0 +1,12 @@
+.cityInfo{
+    text-align: center;
+    padding: 25px
+}
+.cityInfo_labelBlock{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.cityInfo form input{
+padding: 7px;
+font-size: 14px;
+}
