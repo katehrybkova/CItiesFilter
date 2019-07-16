@@ -10,17 +10,18 @@
 </head>
 
 <body>
-    <header></header>
     <main class="cityInfo">
         <form>
-            <div class="cityInfo_labelBlock">
-                <label for="city">Enter city-name for getting full information</label>
-            </div>
-            <input type="text" name="city" placeholder="City">
+            <input type="text" id="txtAutoComplete" list="languageList" />
+            <datalist id="languageList">
+            </datalist>
         </form>
+        <div class="cityInfoContainer"></div>
     </main>
-    <footer></footer>
+    <div class="loader"></div>
+
     <script src="./dist/main.js"></script>
+
 </body>
 
 </html>

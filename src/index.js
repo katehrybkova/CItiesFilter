@@ -1,32 +1,50 @@
+let cities = document.querySelector("#languageList");
+let cityInfoContainer = document.querySelector(".cityInfoContainer");
+let input = document.querySelector("#txtAutoComplete");
+let loader = document.querySelector(".loader");
 
-// import generic from 'src/analytics/fixtures/cities.json';
-// console.log(generic)
-
-// function requireAll( requireContext ) {
-//     return requireContext.keys().map( requireContext );
-//   }
-//   let modules = requireAll( require.context("analytics/fixtures", false, /.json$/) );
-//   console.log(modules)
-
-var request = new XMLHttpRequest();
-var requestURL = 'https://github.com/katehrybkova/CItiesFilter/blob/master/src/analytics/fixtures/cities.json';
-
-request.open('GET', requestURL);
-request.onreadystatechange = function(e) {
-    if (this.readyState = 4) {
-        if (this.status == 200) {
-            var response = JSON.parse(this.responseText);
-console.log(response)        }
-        else {
-console.log("sorry! error")        }
-    }
-}
-request.responseType = 'json';
-request.send();
-
-request.onload = function() {
-  var file = request.response;
-  console.log(file)
+function getCityNames() {
+  return new Promise((resolve, rejecet) => {
+    fetch("https://katehrybkova.github.io/CItiesFilter/src/analytics/fixtures/cities.json")
+      .then(res => res.json())
+      .then((data) => {
+        resolve(data)
+      })
+      .catch(err => {
+        reject(err)
+      });
+  })
 }
 
+function getCityInfo(cityName) {
+  return new Promise((resolve, reject) => {
+    fetch(`https://katehrybkova.github.io/CItiesFilter/src/analytics/fixtures/data/${cityName.toLowerCase()}.json`)
+      .then(res => res.json())
+      .then((data) => {
+        setTimeout(() => {resolve(data);
+          loader.style.display = "none";
+        }, 2000);
+      })
+      .catch(err => {
+        reject(err)
+      });
+  })
+}
 
+getCityNames()
+  .then(data => {
+    data.map(el => cities.innerHTML += `<option value=${el.city}>`)
+  })
+
+input.addEventListener("change", function (e) {
+  loader.style.display = "block";
+
+  getCityInfo(this.value)
+    .then(data => {
+      console.log(data)
+      data.forEach(city => cityInfoContainer.innerHTML += `<p> Statistic of the city in ${city.year}:</p><p> Population of city - ${city.population}</p><p> Сost of living - ${city["cost-of-living"]}$</p><p>-------||--------</p>`)
+    })
+    .catch(err => {
+      console.log('err', err)
+    })
+})
